@@ -4,7 +4,7 @@
 // description: sFlow-RT Real-time Dashboard Example
 // copyright: Copyright (c) 2015 InMon Corp.
 
-include('./inc/trend.js');
+include(scriptdir() + '/inc/trend.js');
 
 var trend = new Trend(300,1);
 var points;
