@@ -1,4 +1,4 @@
-Real-Time Dashboard Example
+# Real-Time Dashboard Example
 
 Copy files to the sFlow-RT app directory and restart to install.
 
