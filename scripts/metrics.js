@@ -32,9 +32,8 @@ function calculateTopN(metric,n,minVal,total_bps) {
   return topN;
 }
 
-setIntervalHandler(function() {
-  var now, res, total_bps;
-  now = (new Date()).getTime();
+setIntervalHandler(function(now) {
+  var res, total_bps;
 
   points = {};
 
@@ -48,7 +47,7 @@ setIntervalHandler(function() {
     if(res[2].metricValue) points['bps_out'] += 8 * res[2].metricValue;
   }
   points['top-5-protocols'] = calculateTopN('dashboard_example_stack',5,1,points.bps);
-  trend.addPoints(points);
+  trend.addPoints(now,points);
 },1);
 
 setHttpHandler(function(req) {
