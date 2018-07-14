@@ -144,7 +144,5 @@ $(function() {
     $.event.trigger({type:'updateChart'});
   });
 
-  $(document).ready(function() {
-    pollTrends();
-  });
+  pollTrends();
 });
