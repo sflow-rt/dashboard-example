@@ -4,8 +4,9 @@ http://blog.sflow.com/2015/09/real-time-analytics-and-control.html
 
 ## To install
 
-1. Copy files to the sFlow-RT app directory.
-2. Restart sFlow-RT to load application.
+1. [Download sFlow-RT](https://sflow-rt.com/download.php)
+2. Run command: `sflow-rt/get-app.sh sflow-rt dashboard-example`
+3. Restart sFlow-RT
 
 For more information, visit:
 http://www.sFlow-RT.com
